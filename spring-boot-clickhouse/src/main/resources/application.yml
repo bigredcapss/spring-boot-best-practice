@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.clickhouse.jdbc.ClickHouseDriver
+    url: jdbc:clickhouse://localhost:8123/default
+    username: default
+    password: 
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      connection-timeout: 30000
+      max-lifetime: 1800000
+
+clickhouse:
+  properties:
+    socket_timeout: 30000
+    connect_timeout: 30000 

@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring-boot-rocketmq
+
+rocketmq:
+  name-server: localhost:9876
+  producer:
+    group: my-producer-group
+    send-message-timeout: 3000
+    compress-message-body-threshold: 4096
+    max-message-size: 4194304
+    retry-times-when-send-failed: 2
+    retry-times-when-send-async-failed: 2
+    retry-next-server: true
+    enable-msg-trace: true
+    customized-trace-topic: RMQ_SYS_TRACE_TOPIC 

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-boot-hbase
+
+hbase:
+  zookeeper:
+    quorum: localhost
+    port: 2181
+    znode-parent: /hbase 
